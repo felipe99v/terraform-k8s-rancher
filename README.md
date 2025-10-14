@@ -137,3 +137,8 @@ kubectl patch ingress rancher -n cattle-system -p '{"spec": {"ingressClassName":
 
 Using the domain the Rancher panel is accessed
 ![Alt text](images/rancherresult.PNG)
+
+### Additional Consideration
+
+In this project, Rancher was deployed using direct Helm commands for simplicity and demonstration purposes.
+However, in a more robust and production-oriented environment, it is recommended to adopt a GitOps approach using Argo CD to manage Helm releases.
