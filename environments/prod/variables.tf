@@ -163,5 +163,5 @@ variable "eks_principal_access" {
 variable "access_entry_policy_access" {
   description = "ARN policy access"
   type        = string
-  default     = "arn:aws:eks::aws:cluster-access-policy/AmazonEKSClusterPolicy"
+  default     = "arn:aws:eks::aws:cluster-access-policy/AmazonEKSClusterAdminPolicy"
 }
