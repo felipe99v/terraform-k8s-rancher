@@ -31,4 +31,6 @@ module "eks" {
   Max_Size_Node_Group_EKS      = var.Max_Size_Node_Group_EKS
   Min_Size_Node_Group_EKS      = var.Min_Size_Node_Group_EKS
   Name_EKS_Node_Role           = var.Name_EKS_Node_Role
+  eks_principal_access         = var.eks_principal_access
+  access_entry_policy_access   = var.access_entry_policy_access
 }
