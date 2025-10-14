@@ -73,3 +73,15 @@ variable "Name_EKS_Node_Role" {
   type        = string
   default     = "EKS-Node-Role-env"
 }
+
+variable "eks_principal_access" {
+  description = "ARN principal access"
+  type        = string
+  default     = "arn:aws:iam::idaccount:user/name"
+}
+
+variable "access_entry_policy_access" {
+  description = "ARN policy access"
+  type        = string
+  default     = "arn:aws:eks::aws:cluster-access-policy/AmazonEKSClusterPolicy"
+}

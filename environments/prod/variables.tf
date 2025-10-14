@@ -153,3 +153,15 @@ variable "Name_EKS_Node_Role" {
   type        = string
   default     = "EKS-Node-Role-Prod"
 }
+
+variable "eks_principal_access" {
+  description = "ARN principal access"
+  type        = string
+  default     = "arn:aws:iam::363664571315:user/fvarela@produccion"
+}
+
+variable "access_entry_policy_access" {
+  description = "ARN policy access"
+  type        = string
+  default     = "arn:aws:eks::aws:cluster-access-policy/AmazonEKSClusterPolicy"
+}
